@@ -1,0 +1,36 @@
+body{
+    background: linear-gradient(to bottom, black,rgb(26, 41, 92));
+    background-attachment: fixed;    
+}
+/* nav style */
+nav{
+    position: -webkit-sticky;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    gap: 20px;
+}
+/* div style */
+div{
+    margin: auto;
+}
+/* H1 Style */
+h1{
+    color: white;
+}
+/* H2 Style */
+h2{
+    color: white;
+}
+/* H3 Style */
+h3{
+    color: white;
+}
+/* H4 style */
+h4{
+    color: white;
+}
+/* p style */
+p{
+    color: white;
+}
