@@ -19,7 +19,7 @@ div {
 
 /* H1 Style */
 h1 {
-    color: white;
+    color: rgb(1, 153, 255);
 }
 
 /* H2 Style */
@@ -41,4 +41,33 @@ h4 {
 /* p style */
 p {
     color: white;
+}
+
+/* unOrderd List Style */
+ul {
+    color: white;
+}
+
+/* Label Style */
+label {
+    color: white;
+}
+
+/* fORM Style*/
+form {
+    text-align: center;
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+button {
+    background-color: black;
+    color: rgb(1, 153, 255);
+    border: 2px;
+    border-radius: 12px;
+    padding-inline: 15px;
+    padding-block: 10px;
+    border-color: rgb(1, 153, 255);
+    border-style: solid;
 }
