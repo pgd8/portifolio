@@ -59,8 +59,10 @@ form {
     max-width: 500px;
     margin: 0 auto;
     padding: 20px;
+
 }
 
+/* button Style*/
 button {
     background-color: black;
     color: rgb(1, 153, 255);
@@ -70,4 +72,9 @@ button {
     padding-block: 10px;
     border-color: rgb(1, 153, 255);
     border-style: solid;
+}
+
+/* b Style */
+b {
+    color: rgb(1, 153, 255);
 }
