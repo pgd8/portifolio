@@ -1,40 +1,89 @@
 <!DOCTYPE html>
 <html lang="en">
-<!-- Head -->
 
 <head>
-    <title>Abdelrahman Hmadi | Software Engineer</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Abdelrahman Hamdi | Software Engineer</title>
     <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            color: white;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            height: 100vh;
+            /* Fill entire screen */
+            overflow: hidden;
+            /* Disable scrollbars */
+            background-color: #0d1117;
+            /* Optional: dark background */
+        }
+
+        section.hero {
+            flex: 1;
+            /* Take remaining vertical space after nav */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 60px;
+            max-width: 1100px;
+            width: 100%;
+        }
+
+        h1 {
+            font-size: 2.5rem;
+            font-weight: 800;
+            margin: 10px 0;
+            line-height: 1.2;
+        }
+
+        p {
+            font-size: 1rem;
+            color: #ddd;
+            margin-bottom: 15px;
+        }
+
+        .image-block img {
+            max-height: 70vh;
+            /* Scale image so it always fits */
+            width: auto;
+        }
+    </style>
 </head>
-<!-- Body -->
 
 <body>
-    <section id="navBar">
-        <nav>
-            <div><a href="logo">lOGO</a></div>
-            <a href="./index.html#AboutMe"> About Me </a>
-            <a href="./index.html#education"> Education </a>
-            <a href="./index.html#experience">Experience</a>
-            <a href="./index.html#technicalSkills">Technical Skills</a>
-            <a href="./index.html#certificates">Certificates</a>
-            <a href="./index.html#honorsAndAwards">Honors &amp; Awards</a>
-            <a href="./index.html#contactMe">Contact Me</a>
-            <a href="https://www.linkedin.com/in/abdelrahman-hamdi-965767253/">LinkedIn</a>
-            <div> <a href="">CV</a></div>
-        </nav>
-    </section>
-    <h2>Welcome To</h2>s
-    <h1>Abdelrahman Hamdi's Portifolio</h1>
-    <img src="./assets/images/avatar.jpg" width="300">
-</body>
-<style>
-    h2 {
-        text-align: center;
-    }
 
-    h1 {
-        text-align: center;
-    }
-</style>
+    <nav>
+        <a href="./index.html#AboutMe">About Me</a>
+        <a href="./index.html#education">Education</a>
+        <a href="./index.html#experience">Experience</a>
+        <a href="./index.html#technicalSkills">Technical Skills</a>
+        <a href="./index.html#certificates">Certificates</a>
+        <a href="./index.html#honorsAndAwards">Honors & Awards</a>
+        <a href="./index.html#contactMe">Contact Me</a>
+        <a href="https://www.linkedin.com/in/abdelrahman-hamdi-965767253/">LinkedIn</a>
+        <a href="#">CV</a>
+    </nav>
+
+    <section class="hero">
+        <div class="text-block">
+            <div class="role">Software Engineer</div>
+            <h1>ABDELRAHMAN<br>HAMDI</h1>
+            <p>Flutter Developer</p>
+            <p>Need a full custom Mobile app? <br><strong>Got a project? Let's talk.</strong></p>
+            <a href="#contactMe" class="cta-btn">GET STARTED</a>
+        </div>
+
+        <div class="image-block">
+            <img src="./assets/images/avatar.jpg" alt="Profile Image">
+            <div class="circle"></div>
+            <div class="semi-circle"></div>
+        </div>
+    </section>
+
+</body>
 
 </html>
