@@ -1,36 +1,186 @@
-body{
-    background: linear-gradient(to bottom, black,rgb(26, 41, 92));
-    background-attachment: fixed;    
+body {
+    background: linear-gradient(to bottom, black, rgb(26, 41, 92));
+    background-attachment: fixed;
 }
+
 /* nav style */
-nav{
-    position: -webkit-sticky;
+nav {
     display: flex;
-    align-items: center;
+    justify-content: flex-end;
+    gap: 15px;
+    /* more space between links */
+    padding: 20px 60px;
+    /* add breathing room like screenshot */
+    background-color: #0d1117;
+    /* keep dark background */
     width: 100%;
-    gap: 20px;
 }
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    transition: color 0.3s ease;
+}
+
+nav a:hover {
+    color: #2ecc71;
+    /* green hover like screenshot */
+}
+
+/* Remove special visited link color to stay consistent */
+a:visited {
+    color: white;
+}
+
 /* div style */
-div{
+div {
     margin: auto;
 }
+
 /* H1 Style */
-h1{
-    color: white;
+h1 {
+    color: rgb(1, 153, 255);
 }
+
 /* H2 Style */
-h2{
+h2 {
     color: white;
+    position: static;
 }
+
 /* H3 Style */
-h3{
+h3 {
     color: white;
 }
+
 /* H4 style */
-h4{
+h4 {
     color: white;
 }
+
 /* p style */
-p{
+p {
     color: white;
+}
+
+/* unOrderd List Style */
+ul {
+    color: white;
+}
+
+/* Label Style */
+label {
+    color: white;
+}
+
+/* fORM Style*/
+form {
+    text-align: center;
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 20px;
+
+}
+
+/* button Style*/
+button {
+    background-color: black;
+    color: rgb(1, 153, 255);
+    border: 2px;
+    border-radius: 12px;
+    padding-inline: 15px;
+    padding-block: 10px;
+    border-color: rgb(1, 153, 255);
+    border-style: solid;
+}
+
+/* b Style */
+b {
+    color: rgb(1, 153, 255);
+}
+
+.text-block {
+    max-width: 400px;
+}
+
+.role {
+    color: white;
+    /* green */
+    font-size: 0.9rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.cta-btn {
+    display: inline-block;
+    background-color: #1ba34c;
+    color: white;
+    text-decoration: none;
+    padding: 12px 28px;
+    font-weight: bold;
+    border-radius: 8px;
+    transition: 0.2s ease-in-out;
+}
+
+.cta-btn:hover {
+    background-color: #1ba34c;
+}
+
+.image-block {
+    position: relative;
+}
+
+.image-block img {
+    width: 300px;
+    /* border-radius: 12px; */
+    border-top-right-radius: 30%;
+    border-bottom-left-radius: 30%;
+    position: relative;
+    z-index: 2;
+}
+
+/* Decorative shapes */
+.circle {
+    position: absolute;
+    top: -30px;
+    right: -50px;
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    background: #facc15;
+    z-index: 1;
+}
+
+.semi-circle {
+    position: absolute;
+    bottom: -20px;
+    left: -30px;
+    width: 100px;
+    height: 100px;
+    background: #ef4444;
+    border-radius: 50%;
+    clip-path: polygon(0 0, 100% 0, 100% 50%, 0 50%);
+    z-index: 1;
+}
+
+section.hero {
+    flex: 1;
+    /* Take remaining vertical space after nav */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 60px;
+    max-width: 1100px;
+    width: 100%;
+}
+
+.image-block img {
+    max-height: 70vh;
+    /* Scale image so it always fits */
+    width: auto;
 }
