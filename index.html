@@ -2,124 +2,71 @@
 <html lang="en">
 
 <head>
-    <title> Abdelrahman Hamdi | Software Engineer</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Abdelrahman Hamdi | Software Engineer</title>
     <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            color: white;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            height: 100vh;
+            /* Fill entire screen */
+            overflow: hidden;
+            /* Disable scrollbars */
+            background-color: #0d1117;
+            /* Optional: dark background */
+        }
+
+        h1 {
+            font-size: 2.5rem;
+            font-weight: 800;
+            margin: 10px 0;
+            line-height: 1.2;
+        }
+
+        p {
+            font-size: 1rem;
+            color: #ddd;
+            margin-bottom: 15px;
+        }
+    </style>
 </head>
 
 <body>
-    <section id="AboutMe">
-        <h1> Abdout Me</h1>
-        <p>Hi, I'm Abdelrahman Hamdi. I'm a flutter developer with a Bachelor's degree in Computer science,
-            I'm experienced in building scalable, responsive, and adptive
-            mobile apps for IOS and Android using Flutter, I 'v worked on many projects as a Freelancer
-            and created projects for my own,
-            and I'm alse an instructor help students to start their career in building mobile apps using flutter.</p>
+
+    <nav>
+        <a href="./home.html#AboutMe">About Me</a>
+        <a href="./home.html#education">Education</a>
+        <a href="./home.html#experience">Experience</a>
+        <a href="./home.html#technicalSkills">Technical Skills</a>
+        <a href="./home.html#certificates">Certificates</a>
+        <a href="./home.html#honorsAndAwards">Honors & Awards</a>
+        <a href="./home.html#contactMe">Contact Me</a>
+        <a href="https://www.linkedin.com/in/abdelrahman-hamdi-965767253/">LinkedIn</a>
+        <a href="#">CV</a>
+    </nav>
+
+    <section class="hero">
+        <div class="text-block">
+            <div class="role">Software Engineer</div>
+            <h1>ABDELRAHMAN<br>HAMDI</h1>
+            <p>Flutter Developer</p>
+            <p>Need a full custom Mobile app? <br><strong>Got a project? Let's talk.</strong></p>
+            <a href="#contactMe" class="cta-btn">GET STARTED</a>
+        </div>
+
+        <div class="image-block">
+            <img src="./assets/images/avatar.jpg" alt="Profile Image">
+            <div class="circle"></div>
+            <div class="semi-circle"></div>
+        </div>
     </section>
-    <hr>
-    <section id="education">
-        <h1>Education</h1>
-        <p>Graduated from Modern Acdemy for Computer Science and Information Technology - (jun25)</p>
-    </section>
-    <hr>
-    <section id="experience">
-        <h1>Experience</h1>
-        <h3> Mobile App Developer Flutter – VIVIONIFY (Feb 25 - present) </h3>
-        <ul>
-            <li>
-                Built Real-Time mobile Apps helps :
-                <ul>
-                    <li>
-                        <b>KrioTravel:</b> An app used to book Taxis in 5 countries in
-                        Eroupe, built with clean
-                        Architecture,
-                        Firebase Messaging, Google Maps.
-                    </li>
-                    <li>
-                        <b>Souis Moi:</b> An App for the oldest Church in France.
-                    </li>
-                </ul>
-            </li>
-            <li>
-                Wrote clean code in most Projects i worked on .
-            </li>
-        </ul>
-        <br>
-        <h3>Mobile App Developer Flutter - Talabat (Aug 23- Sep24)</h3>
-    </section>
-    <hr>
-    <section id="technicalSkills">
-        <h1>Technical Skills</h1>
-        <ul>
-            <li>Dart &amp; Flutter</li>
-            <li>OOP</li>
-            <li>Knowledge About AGP</li>
-            <li>Java Programming Language</li>
-            <li>Algorithms</li>
-            <li>Data Structures</li>
-            <li>Firebase (Auth, FireStore,Cloud Messaging, Crashletics)</li>
-            <li>Resposive apps building</li>
-            <li>clean Architecture</li>
-            <li>Rest APIs</li>
-            <li>Design Patterns</li>
-            <li>Git &amp; Github</li>
-            <li>Problem Solving</li>
-        </ul>
-    </section>
-    <hr>
-    <section id="certificates">
-        <h1>Certificates</h1>
-        <ul>
-            <li><b>introduction to Dart</b> - LinkedIn</li>
-            <li><b> complete a flutter diploma</b> - Route Academy</li>
-            <li><b>Software Development - Mobile App Developer </b> - Ministry of communications and information
-                technology</li>
-            <li><b>Google Ads</b> - Coursera</li>
-            <li><b>Business English Track</b> - Digital Egypt pioneers</li>
-        </ul>
-    </section>
-    <hr>
-    <section id="honorsAndAwards">
-        <h1>Honors &amp; Awards</h1>
-        <ul>
-            <li><b>Google Solution Challenge Egypt</b> - GDSC Egypt, Mar 2023.
-                <ul>
-                    <li>9th place in Google Solution Challenge Egypt, I took part with an application from my
-                        own constructionand development.</li>
-                </ul>
-            </li>
-            <li><b> Ideathon Solution Challenge </b> – GDSC Modern Academy for Computer Science Feb2023.
-                <ul>
-                    <li>2nd place in Ideathon Solution Challenge.</li>
-                </ul>
-            </li>
-            <li><b>giving a flutter worksop </b> - breaking barriers event</li>
-            <li><b>giving a flutter course</b> - Modern Academy</li>
-            <li><b>Delivering a good season of achievements as a Flutter developer and a Flutter Head</b>
-                - Sadat Academy</li>
-        </ul>
-    </section>
-    <hr>
-    <section id="contactMe">
-        <form id="contactForm">
-            <h1>Contact Me</h1>
-            <label for="name" id="nameLabel">Name</label><br>
-            <input type="text" id="name" name="name"><br>
-            <br>
-            <label for="phoneNumber" id="phoneNumberLabel">Phone Number</label><br>
-            <input type="tel" id="number" name="phoneNumber"><br>
-            <br>
-            <label for="email" id="emailLabel">Email</label><br>
-            <input type="email" id="emailAddress" name="email"><br>
-            <br>
-            <label for="meeting" id="meetingLabel">Meeting</label>
-            <input type="checkbox" id="isMeeting" name="isMeeting"><br>
-            <br>
-            <label for="meetingDate" id="meetingDateLabel">Meeting Date</label><br>
-            <input type="date" id="meetingDate" name="meetingDate"><br>
-            <br>
-            <button id="submitContactInfoButton" name="submitContactInfo" type="submit">Submit</button>
-        </form>
-    </section>
+
 </body>
 
 </html>

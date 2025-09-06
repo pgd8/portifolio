@@ -9,7 +9,7 @@
             "request": "launch",
             "name": "Launch Chrome against localhost",
             // "url": "http://localhost:8080",
-            "url": "file:///E:/ITI/firstITIproject.html/welcome.html",
+            "url": "file:///E:/ITI/firstITIproject.html/index.html",
             "webRoot": "${workspaceFolder}"
         }
     ]
