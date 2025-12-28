@@ -7,13 +7,24 @@
   padding: 0;
 }
 
-html, body {
+html,
+body {
   height: 100%;
   font-family: 'Poppins', sans-serif;
   background: radial-gradient(circle at top, #0b0b0b, #000);
   color: #fff;
   overflow-x: hidden;
   scroll-behavior: smooth;
+}
+
+body {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+footer {
+  margin-top: auto;
 }
 
 /* Navbar */
@@ -39,6 +50,7 @@ header {
   font-size: 1.6rem;
   font-weight: 700;
 }
+
 .logo span {
   color: #b388ff;
 }
@@ -55,6 +67,7 @@ header {
   position: relative;
   transition: color 0.3s;
 }
+
 .navbar a::after {
   content: "";
   position: absolute;
@@ -65,10 +78,12 @@ header {
   background: #00fff0;
   transition: width 0.3s;
 }
+
 .navbar a:hover::after,
 .navbar a.active::after {
   width: 100%;
 }
+
 .navbar a:hover {
   color: #00fff0;
 }
@@ -86,6 +101,7 @@ header {
   align-items: center;
   z-index: 9999;
 }
+
 .loader {
   width: 100px;
   height: 100px;
@@ -98,14 +114,18 @@ header {
   align-items: center;
   justify-content: center;
 }
+
 .initials {
   position: absolute;
   font-size: 1.3em;
   color: #00fff0;
   text-shadow: 0 0 10px #00fff0;
 }
+
 @keyframes spin {
-  to { transform: rotate(360deg); }
+  to {
+    transform: rotate(360deg);
+  }
 }
 
 /* Sections */
@@ -114,13 +134,16 @@ section {
   position: relative;
   text-align: center;
 }
+
 .section-title {
   font-size: 2em;
   color: #00fff0;
   text-shadow: 0 0 10px #00fff0;
   margin-bottom: 25px;
 }
-p, li {
+
+p,
+li {
   font-size: 1rem;
   color: #ccc;
   line-height: 1.6;
@@ -134,19 +157,23 @@ p, li {
   align-items: center;
   text-align: center;
 }
+
 #hero .neon {
   font-size: 3em;
   text-shadow: 0 0 15px #00fff0, 0 0 30px #00fff0;
 }
+
 .subtitle {
   color: #b388ff;
   text-shadow: 0 0 10px #b388ff;
 }
+
 .socials a {
   margin: 0 10px;
   color: #00fff0;
   text-decoration: none;
 }
+
 .socials a:hover {
   color: #b388ff;
 }
@@ -159,6 +186,7 @@ p, li {
   text-align: center;
   margin-top: 30px;
 }
+
 .skills-grid span {
   padding: 12px;
   border: 1px solid #00fff0;
@@ -167,6 +195,7 @@ p, li {
   transition: all 0.3s;
   cursor: default;
 }
+
 .skills-grid span:hover {
   background: rgba(0, 255, 240, 0.1);
   transform: scale(1.05);
@@ -195,6 +224,7 @@ p, li {
   gap: 25px;
   margin-top: 20px;
 }
+
 .job {
   background: rgba(255, 255, 255, 0.05);
   padding: 20px;
@@ -202,9 +232,11 @@ p, li {
   box-shadow: 0 0 10px rgba(0, 255, 240, 0.4);
   text-align: left;
 }
+
 .job h3 {
   color: #b388ff;
 }
+
 .job p {
   color: #ccc;
 }
@@ -213,13 +245,15 @@ p, li {
 footer {
   text-align: center;
   padding: 30px;
-  background: rgba(255,255,255,0.05);
+  background: rgba(255, 255, 255, 0.05);
   border-top: 1px solid #00fff0;
 }
+
 footer a {
   color: #00fff0;
   text-decoration: none;
 }
+
 footer a:hover {
   color: #b388ff;
 }
@@ -228,18 +262,56 @@ footer a:hover {
 .moving-logo {
   position: fixed;
   width: 70px;
-  opacity: 0.2;
+  opacity: 0.3;
   pointer-events: none;
   transition: transform 0.25s ease-out;
   z-index: 0;
 }
+
 .flutter-logo {
   top: 20%;
   left: 10%;
 }
+
 .dart-logo {
   bottom: 15%;
   right: 10%;
+}
+
+.vscode-logo {
+  bottom: 15%;
+  left: 10%;
+}
+
+
+.java-logo {
+  top: 15%;
+  right: 10%;
+}
+
+.jira-logo {
+  bottom: 50%;
+  right: 10%;
+}
+
+.postman-logo {
+  bottom: 51%;
+  left: 10%;
+}
+
+.mongo-logo {
+  bottom: 15%;
+  left: 40%;
+}
+
+.sql-logo {
+  bottom: 15%;
+  right: 50%;
+}
+
+.iti-logo {
+  top: 15%;
+  left: 50%;
 }
 
 /* Fade-slide Animation */
@@ -248,6 +320,31 @@ footer a:hover {
   transform: translateY(30px);
   animation: fadeSlideIn 1s forwards;
 }
+
+.certificates-wrap {
+  text-align: center;
+}
+
+.certificates-list {
+  display: inline-block;
+  text-align: left;
+  margin: 0;
+  padding-left: 18px;
+}
+
+.certificates-list li {
+  margin: 6px 0;
+}
+
+.footer-style {
+  position: sticky;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+  padding: 12px;
+}
+
+
 @keyframes fadeSlideIn {
   to {
     opacity: 1;
@@ -260,6 +357,7 @@ footer a:hover {
   .navbar ul {
     gap: 15px;
   }
+
   .skills-grid {
     grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
   }
@@ -278,5 +376,3 @@ footer a:hover {
   gap: 20px;
   text-align: center;
 }
-
-
