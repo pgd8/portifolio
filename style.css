@@ -102,6 +102,26 @@ header {
   z-index: 9999;
 }
 
+.avatar-wrapper {
+  text-align: center;
+  margin: 0 auto;
+  width: 305px;
+  height: 305px;
+  padding: 2px;
+  /* border thickness */
+  border-radius: 50%;
+  background: linear-gradient(135deg, #00fff0, #b388ff);
+}
+
+.avatar {
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  object-fit: cover;
+  background: white;
+}
+
+
 .loader {
   width: 100px;
   height: 100px;
@@ -319,6 +339,11 @@ footer a:hover {
   opacity: 0;
   transform: translateY(30px);
   animation: fadeSlideIn 1s forwards;
+  min-height: calc(100vh - 160px);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
 }
 
 .certificates-wrap {
